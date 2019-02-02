@@ -3,7 +3,7 @@ version: '3'
 services:
 
   oxid6_apache:
-    build: container/apache_php7/.
+    build: container/apache_php56/.
     hostname: ${DOMAIN}
     restart: always
     depends_on:
@@ -24,7 +24,7 @@ services:
       - oxid6_mailhog:mail.server
       
   oxid6_mysql:
-    image: mysql:5.7
+    image: mysql:5.6
     hostname: mysql.${DOMAIN}
     restart: always
     volumes:

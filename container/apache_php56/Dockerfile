@@ -1,6 +1,4 @@
-FROM php:7.1-apache
-
-MAINTAINER module@proudcommerce.com
+FROM php:5.6-apache
 
 # timezone / date   
 RUN echo "Europe/Berlin" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
