@@ -4,12 +4,10 @@ This setup bootstraps an dockerized developer environment for [OXID eShop 6](htt
 
 ## Overview
 
-- Apache 2.4 container PHP 7.1 ([Dockerfile](container/apache_php7/Dockerfile))
-- MySQL 5.7 container ([Dockerfile](https://github.com/docker-library/mysql/blob/883703dfb30d9c197e0059a669c4bb64d55f6e0d/5.7/Dockerfile))
+- Apache 2.4 container PHP 5.6 ([Dockerfile](container/apache_php56/Dockerfile))
+- MySQL 5.5 container ([Dockerfile](https://github.com/docker-library/mysql/blob/883703dfb30d9c197e0059a669c4bb64d55f6e0d/5.7/Dockerfile))
 - MailHog container ([Dockerfile](https://github.com/mailhog/MailHog/blob/master/Dockerfile))
 - phpMyAdmin container ([Dockerfile](https://hub.docker.com/r/phpmyadmin/phpmyadmin/~/dockerfile/))
-- OXID composer project ([6.0.2](https://github.com/OXID-eSales/oxideshop_metapackage_ce/blob/b-6.0/composer.json))
-- OXID demo data
 
 ## Quickstart
 1. Install [docker enginge](https://docs.docker.com/engine/installation/)
