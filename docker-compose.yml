@@ -24,7 +24,7 @@ services:
       - oxid6_mailhog:mail.server
       
   oxid6_mysql:
-    image: mysql:5.6
+    image: mysql:5.5
     hostname: mysql.${DOMAIN}
     restart: always
     volumes:
