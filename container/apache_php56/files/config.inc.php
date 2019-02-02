@@ -21,13 +21,13 @@
  */
 
 // Database connection information
-$this->dbType = 'mysqli';
+$this->dbType = 'mysql';
 $this->dbHost = 'oxid6_mysql'; // database host name
 $this->dbPort = 3306; // tcp port to which the database is bound
 $this->dbName = 'oxid6'; // database name
 $this->dbUser = 'oxid6'; // database user name
 $this->dbPwd = 'UX6rg8AsaiR2'; // database user password
-$this->sShopURL = 'http://oxid6.localhost:80'; // eShop base url, required
+$this->sShopURL = 'http://localhost:80'; // eShop base url, required
 $this->sSSLShopURL = null;            // eShop SSL url, optional
 $this->sAdminSSLURL = null;            // eShop Admin SSL url, optional
 $this->sShopDir = '/var/www/html/source';
