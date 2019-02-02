@@ -17,12 +17,6 @@ RUN apt-get update -y && \
 RUN docker-php-ext-configure gd --with-jpeg-dir=/usr/local/ && \
   docker-php-ext-install -j$(nproc) zip bcmath soap pdo_mysql gd
 
-# composer stuff
-RUN php -r 'readfile("https://getcomposer.org/installer");' > composer-setup.php \
-  && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
-  && rm -f composer-setup.php \
-  && chown www-data:www-data /var/www
-
 # prepare entrypoint.d pattern
 RUN mkdir /entrypoint.d
 COPY ./files/entrypoint.sh /entrypoint.sh
